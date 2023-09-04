@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style01.css">
+    <title>Register</title>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <h1>Tela de Cadastro</h1>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="reg-container-box">
+            <div class="reg-top">
+                <p>Register Account</p>
+            </div>
+
+            <form>
+                <div class="margin">
+                    <input type="text" placeholder="User" class="input-text" id="user" oninput="validarUsuario()">
+                    <p id="user-error"></p>
+                </div>
+
+                <div class="margin">
+                    <input type="email" placeholder="Email" class="input-text" id="email" oninput="validarEmail()">
+                    <p id="email-error"></p>
+                </div>
+
+                <div class="margin">
+                    <input type="password" placeholder="Password" class="input-text" id="pass" oninput="validarSenha()">
+                    <p id="pass-error"></p>
+                </div>
+                
+                <div>
+                    <input type="password" placeholder="Confirm Password" class="input-text" id="confirm-pass" oninput="confirmarSenha()">
+                    <p id="pass-confirm-error"></p>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="" id="check">
+                    <label class="terms" for="">I agree to the <a style="color: rgb(71, 71, 252);" href="#">Terms</a></label>
+                </div>
+
+                <div>
+                    <button type="button" id="reg-button">Register</button>
+                    <p style="text-align: center;" id="form-status"></p>
+                </div>
+
+                <div>
+                    <button class="sign facebook">Sign up using Facebook</button>
+                </div>
+                
+                <div>
+                    <button class="sign google">Sign up using Google</button>
+                </div>
+            </form>
+
+            <div>
+                <a class="sign membership" href="../pages/login.html">I already have a membership</a>
+            </div>
+
+            <div id="test"></div>
+        </div>
+    </main>
+
+    
+    <footer>
+
+    </footer>
+
+    <script src="../js/reg.js"></script>
+</body>
+</html>

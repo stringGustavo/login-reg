@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    color: white;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+input {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login-container-box, .reg-container-box, .input-text {
+    border: 1px groove rgb(150, 150, 150);
+}
+
+.main, #login-button, #reg-button {
+    display: flex;
+}
+
+.login-container-box, .reg-container-box, .login-top, .reg-top, #login-button, #reg-button, .sign {
+    border-radius: 5px;
+}
+
+.navbar {
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    padding: 10px 5px;
+}
+
+.main {
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container-box, .reg-container-box {
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(61, 61, 61);
+}
+
+.login-top, .reg-top {
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.forgot-pass {
+    font-size: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.margin {
+    margin-bottom: 15px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px 5px;
+    background-color: rgb(41, 41, 41)
+}
+
+.remember, .terms {
+    font-size: 15px;
+}
+
+#login-button, #reg-button {
+    cursor: pointer;
+    border: none;
+    margin: 15px 0 10px auto;
+    padding: 10px;
+    background-color: rgb(55, 111, 233);
+    transition: 350ms;
+}
+
+#login-button:hover, #reg-button:hover {
+    background-color: rgb(34, 184, 14);
+}
+
+.sign {
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    justify-content: center;
+    border: none;
+}
+
+.membership {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.facebook {
+    background-color: rgb(59, 89, 152);
+}
+
+.google {
+    background-color: rgb(219, 68, 55);
+}
